@@ -2,5 +2,10 @@
   "rol": "Desarrollador Full Stack",
   "aboutMe": "Sobre mí",
   "aboutMeText": "hola en español",
-  "Technologies": "Tecnologías"
+  "Technologies": "Tecnologías",
+  "Experience": "Experiencia",
+  "CopyMessage": "¡Copiado al portapapeles!",
+  "JobRol": "Desarrollador Python",
+  "JobDuration": "Enero 2022 - Actualidad",
+  "JobDescription": "Desarrollando y manteniendo sotware"
 }

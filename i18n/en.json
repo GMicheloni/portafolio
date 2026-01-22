@@ -2,5 +2,10 @@
   "rol": "Full Stack Developer",
   "aboutMe": "About Me",
   "aboutMeText": "Hello in English",
-  "Technologies": "Technologies"
+  "Technologies": "Technologies",
+  "Experience": "Experience",
+  "CopyMessage": "Copied to clipboard!",
+  "JobRol": "Python Developer",
+  "JobDuration": "January 2022 - Present",
+  "JobDescription": "Developing and maintaining software"
 }

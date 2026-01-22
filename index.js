@@ -24,7 +24,16 @@ function setLanguage(lang) {
       document.getElementById("about-me-text").textContent =
         translations.aboutMeText;
       document.getElementById("technologies").textContent =
-        translations.technologies;
+        translations.Technologies;
+      document.getElementById("experience").textContent =
+        translations.Experience;
+      document.getElementById("copy-msg").textContent =
+        translations.CopyMessage;
+      document.getElementById("JobRol").textContent = translations.JobRol;
+      document.getElementById("JobDuration").textContent =
+        translations.JobDuration;
+      document.getElementById("JobDescription").textContent =
+        translations.JobDescription;
     });
 }
 
