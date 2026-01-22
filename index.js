@@ -12,3 +12,30 @@ emailBtn.addEventListener("click", () => {
     msg.classList.remove("show");
   }, 2000);
 });
+
+const checkbox = document.getElementById("checkbox");
+
+function setLanguage(lang) {
+  fetch(`i18n/${lang}.json`)
+    .then((response) => response.json())
+    .then((translations) => {
+      document.getElementById("rol").textContent = translations.rol;
+      document.getElementById("about-me").textContent = translations.aboutMe;
+      document.getElementById("about-me-text").textContent =
+        translations.aboutMeText;
+      document.getElementById("technologies").textContent =
+        translations.technologies;
+    });
+}
+
+const userLang = navigator.language || navigator.userLanguage;
+const initialLang = userLang.startsWith("es") ? "es" : "en";
+
+checkbox.checked = initialLang === "en";
+
+setLanguage(initialLang);
+
+checkbox.addEventListener("change", () => {
+  const selectedLang = checkbox.checked ? "en" : "es";
+  setLanguage(selectedLang);
+});

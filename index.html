@@ -21,7 +21,7 @@
       </div>
       <div class="name-title">
         <h1>Gianfranco Micheloni</h1>
-        <h2>Desarrollador Full Stack</h2>
+        <h2 id="rol">Desarrollador Full Stack</h2>
         <div class="location">
           <img src="assets/icons/map-pin.svg" alt="pin de ubicacion" />
           <a
@@ -66,11 +66,27 @@
           /></a>
         </div>
       </div>
+      <div class="button-change-language">
+        <img
+          class="bandera"
+          src="assets/icons/espana.png"
+          alt="bandera de españa"
+        />
+        <label class="switch">
+          <input type="checkbox" id="checkbox" />
+          <span class="slider"></span>
+        </label>
+        <img
+          class="bandera"
+          src="assets/icons/estados-unidos (1).png"
+          alt="bandera de estados unidos"
+        />
+      </div>
     </header>
     <main>
       <section class="about-me">
-        <h3>Sobre mí</h3>
-        <p>
+        <h3 id="about-me">Sobre mí</h3>
+        <p id="about-me-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Necessitatibus maiores error magnam explicabo quisquam blanditiis quos
           ex? Quo, est porro quisquam nostrum quaerat, itaque nobis impedit odit
@@ -79,7 +95,7 @@
       </section>
       <hr class="separation-line" />
       <section class="tech-skills">
-        <h3>Tecnologias</h3>
+        <h3 id="technologies">Tecnologias</h3>
         <div class="tech-icons-list">
           <div class="tech-pill">
             <img
@@ -170,6 +186,13 @@
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
             />
             <span>AWS web services</span>
+          </div>
+          <div class="tech-pill">
+            <img
+              class="tech-icon"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+            />
+            <span>Express.js</span>
           </div>
         </div>
       </section>
