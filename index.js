@@ -16,6 +16,10 @@ emailBtn.addEventListener("click", () => {
 const checkbox = document.getElementById("checkbox");
 
 function setLanguage(lang) {
+  document.getElementById("link-cv").href =
+    lang === "en"
+      ? "assets/cv/Gianfranco Micheloni - Full Stack Developer - CV"
+      : "assets/cv/Gianfranco Micheloni - Programador Full Stack - CV";
   fetch(`i18n/${lang}.json`)
     .then((response) => response.json())
     .then((translations) => {
