@@ -38,6 +38,22 @@ function setLanguage(lang) {
         translations.JobDuration;
       document.getElementById("JobDescription").textContent =
         translations.JobDescription;
+      document.getElementById("projects").textContent = translations.Projects;
+      document.getElementById("project-description").textContent =
+        translations.ProjectDescription1;
+      document.getElementById("education").textContent = translations.Education;
+      document.getElementById("education-degree").textContent =
+        translations.EducationTitle;
+      document.getElementById("education-description").textContent =
+        translations.EducationDescription;
+      document.getElementById("education-duration").textContent =
+        translations.EducationDuration;
+      document.getElementById("education-degree2").textContent =
+        translations.Education2Title;
+      document.getElementById("education-description2").textContent =
+        translations.Education2Description;
+      document.getElementById("education-duration2").textContent =
+        translations.Education2Duration;
     });
 }
 

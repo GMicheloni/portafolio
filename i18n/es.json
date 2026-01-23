@@ -1,11 +1,20 @@
 {
   "rol": "Desarrollador Full Stack",
   "aboutMe": "Sobre mí",
-  "aboutMeText": "hola en español",
+  "aboutMeText": "Desarrollador Full Stack enfocado en la creación de aplicaciones modernas. Me interesa aprender nuevas tecnologías y mejorar continuamente mis habilidades. Busco seguir creciendo profesionalmente participando en proyectos reales y desafiantes.",
   "Technologies": "Tecnologías",
   "Experience": "Experiencia",
   "CopyMessage": "¡Copiado al portapapeles!",
   "JobRol": "Desarrollador Python",
   "JobDuration": "Enero 2022 - Actualidad",
-  "JobDescription": "Desarrollando y manteniendo sotware"
+  "JobDescription": "Desarrollando y manteniendo sotware",
+  "Projects": "Proyectos",
+  "ProjectDescription1": "Aplicacion web para startup",
+  "Education": "Educacion",
+  "EducationTitle": "Desarrollador Fullstack",
+  "EducationDescription": "Bootcamp intensivo de desarrollo web full stack.",
+  "EducationDuration": "Marzo 2025 - Julio 2025",
+  "Education2Title": "Ingenieria en Informatica",
+  "Education2Description": "Carrera universitaria de grado en ingeniería.",
+  "Education2Duration": "Enero 2020 - Actualidad"
 }

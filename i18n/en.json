@@ -1,11 +1,20 @@
 {
   "rol": "Full Stack Developer",
   "aboutMe": "About Me",
-  "aboutMeText": "Hello in English",
+  "aboutMeText": "Full Stack Developer focused on building modern applications. I'm interested in learning new technologies and continuously improving my skills. I'm looking to continue growing professionally by participating in real and challenging projects.",
   "Technologies": "Technologies",
   "Experience": "Experience",
   "CopyMessage": "Copied to clipboard!",
   "JobRol": "Python Developer",
   "JobDuration": "January 2022 - Present",
-  "JobDescription": "Developing and maintaining software"
+  "JobDescription": "Developing and maintaining software",
+  "Projects": "Projects",
+  "ProjectDescription1": "Web apllication for startup",
+  "Education": "Education",
+  "EducationTitle": "Fullstack Developer",
+  "EducationDescription": "Intensive bootcamp in web development",
+  "EducationDuration": "March 2025 - July 2025",
+  "Education2Title": "Systems Engineering",
+  "Education2Description": "Bachelor's degree in Systems Engineering",
+  "Education2Duration": "January 2020 - Present"
 }
