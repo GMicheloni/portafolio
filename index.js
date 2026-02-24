@@ -1,25 +1,33 @@
-const emailBtn = document.getElementById("copy-email");
-const msg = document.getElementById("copy-msg");
+// attach copy-email behavior to every mail-button on the page
+const emailButtons = document.querySelectorAll(".mail-button");
 
-emailBtn.addEventListener("click", () => {
-  const email = "gmicheloni52@gmail.com";
+emailButtons.forEach((emailBtn) => {
+  emailBtn.addEventListener("click", () => {
+    const email = "gmicheloni52@gmail.com";
+    navigator.clipboard.writeText(email);
 
-  navigator.clipboard.writeText(email);
-
-  msg.classList.add("show");
-
-  setTimeout(() => {
-    msg.classList.remove("show");
-  }, 2000);
+    // look for a sibling element with the copy-msg class
+    const msg = emailBtn.parentElement.querySelector(".copy-msg");
+    if (msg) {
+      msg.classList.add("show");
+      setTimeout(() => {
+        msg.classList.remove("show");
+      }, 2000);
+    }
+  });
 });
 
 const checkbox = document.getElementById("checkbox");
 
 function setLanguage(lang) {
-  document.getElementById("link-cv").href =
-    lang === "en"
-      ? "assets/cv/Gianfranco Micheloni – Full Stack Developer – CV.pdf"
-      : "assets/cv/Gianfranco Micheloni - Programador Full Stack - CV.pdf";
+  // update every CV link on the page
+  document.querySelectorAll(".link-cv").forEach((anchor) => {
+    anchor.href =
+      lang === "en"
+        ? "assets/cv/Gianfranco Micheloni – Full Stack Developer – CV.pdf"
+        : "assets/cv/Gianfranco Micheloni - Programador Full Stack - CV.pdf";
+  });
+
   fetch(`i18n/${lang}.json`)
     .then((response) => response.json())
     .then((translations) => {
@@ -31,8 +39,12 @@ function setLanguage(lang) {
         translations.Technologies;
       document.getElementById("experience").textContent =
         translations.Experience;
-      document.getElementById("copy-msg").textContent =
-        translations.CopyMessage;
+
+      // update all copy message spans since there may be two
+      document.querySelectorAll(".copy-msg").forEach((span) => {
+        span.textContent = translations.CopyMessage;
+      });
+
       document.getElementById("JobRol").textContent = translations.JobRol;
       document.getElementById("JobDuration").textContent =
         translations.JobDuration;
