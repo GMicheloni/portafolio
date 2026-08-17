@@ -19,6 +19,53 @@ emailButtons.forEach((emailBtn) => {
 
 const checkbox = document.getElementById("checkbox");
 
+const carouselTrack = document.querySelector(".carousel-track");
+const carouselSlides = document.querySelectorAll(".carousel-slide");
+const carouselDots = document.querySelectorAll(".carousel-dot");
+const carouselPrev = document.querySelector(".carousel-button.prev");
+const carouselNext = document.querySelector(".carousel-button.next");
+
+let currentSlide = 0;
+
+function updateCarousel() {
+  if (!carouselTrack || !carouselSlides.length) {
+    return;
+  }
+
+  carouselTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+  carouselSlides.forEach((slide, index) => {
+    slide.classList.toggle("is-active", index === currentSlide);
+  });
+
+  carouselDots.forEach((dot, index) => {
+    dot.classList.toggle("is-active", index === currentSlide);
+  });
+}
+
+function goToSlide(index) {
+  currentSlide = (index + carouselSlides.length) % carouselSlides.length;
+  updateCarousel();
+}
+
+if (carouselPrev && carouselNext && carouselSlides.length) {
+  carouselPrev.addEventListener("click", () => {
+    goToSlide(currentSlide - 1);
+  });
+
+  carouselNext.addEventListener("click", () => {
+    goToSlide(currentSlide + 1);
+  });
+
+  carouselDots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      goToSlide(index);
+    });
+  });
+
+  updateCarousel();
+}
+
 function setLanguage(lang) {
   // update every CV link on the page
   document.querySelectorAll(".link-cv").forEach((anchor) => {
@@ -50,7 +97,22 @@ function setLanguage(lang) {
         translations.JobDuration;
       document.getElementById("JobDescription").textContent =
         translations.JobDescription;
+      document.getElementById("JobRol3").textContent = translations.JobRol3;
+      document.getElementById("JobDuration3").textContent =
+        translations.JobDuration3;
+      document.getElementById("JobDescription3").textContent =
+        translations.JobDescription3;
+      document.getElementById("JobRol2").textContent = translations.JobRol2;
+      document.getElementById("JobDuration2").textContent =
+        translations.JobDuration2;
+      document.getElementById("JobDescription2").textContent =
+        translations.JobDescription2;
+      document.querySelectorAll(".job-link-text").forEach((span) => {
+        span.textContent = translations.JobLinkLabel;
+      });
       document.getElementById("projects").textContent = translations.Projects;
+      document.getElementById("project-name").textContent =
+        translations.ProjectTitle;
       document.getElementById("project-description").textContent =
         translations.ProjectDescription1;
       document.getElementById("education").textContent = translations.Education;
