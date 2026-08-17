@@ -378,6 +378,9 @@ main.portfolio-layout {
 
 .projects {
   max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 
   padding: 0 1rem;
 }
@@ -436,6 +439,16 @@ info-project {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.project-cover-image-services {
+  margin: 1rem 0;
+  max-width: 100%;
+  border-radius: 16px;
+}
+
+.project-cover-link-services {
+  max-width: 100%;
 }
 
 .project-cover-link:hover {

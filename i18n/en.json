@@ -18,6 +18,8 @@
   "Projects": "Projects",
   "ProjectTitle": "What-to-watch-today",
   "ProjectDescription1": "AI-powered full-stack movie recommendation platform. It combines TMDB API, Ollama (Llama 3), and Redis to generate personalized recommendations with explanations and improve performance through caching.",
+  "ProjectTitle2": "Servicios Libre",
+  "ProjectDescription2": "Service marketplace that connects clients with workers through real-time chat and contract management, with role-based authentication, service approval, reviews, notifications, and payments integrated with Stripe and Mercado Pago.",
   "Education": "Education",
   "EducationTitle": "Fullstack Developer",
   "EducationDescription": "Intensive bootcamp in web development",

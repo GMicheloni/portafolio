@@ -115,6 +115,10 @@ function setLanguage(lang) {
         translations.ProjectTitle;
       document.getElementById("project-description").textContent =
         translations.ProjectDescription1;
+      document.getElementById("project-name-2").textContent =
+        translations.ProjectTitle2;
+      document.getElementById("project-description-2").textContent =
+        translations.ProjectDescription2;
       document.getElementById("education").textContent = translations.Education;
       document.getElementById("education-degree").textContent =
         translations.EducationTitle;
